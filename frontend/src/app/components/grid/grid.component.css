@@ -1,0 +1,66 @@
+div {
+    --size-cell: 80px;
+}
+
+.board {
+    --nb-cell: 4;   
+    width: calc(var(--size-cell) * var(--nb-cell));
+    min-height: auto;
+    border: 1px solid;
+    position: relative;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(var(--nb-cell), 1fr);
+    margin-bottom: var(--size-cell); 
+}
+.patternsWithNumbers{
+    display: flex;
+}
+
+.displayed-text{
+    font-size: 15px;
+    text-align: left;
+}
+
+.patterns {  
+    --nb-cell : 2;
+    width: calc(var(--size-cell) * var(--nb-cell));
+    min-height: auto;
+    border: 1px solid;
+    position: relative;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(var(--nb-cell), 1fr);
+}
+.numberOfPatterns {
+    font-size: large; 
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    background: white;
+    width: calc(var(--size-cell) - 2px);
+    height: calc(var(--size-cell) - 2px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border: 1px solid black;
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tile img:hover {
+    transform: scale(1.1);
+}
+
+.validated {
+    background-color: green;
+}

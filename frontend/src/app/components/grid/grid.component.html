@@ -1,0 +1,23 @@
+
+<div class="board">
+  <ng-container *ngFor="let x of getGrid().getBoard(); let i = index;">
+    <div 
+      class="tile" 
+      [attr.data-x]="x" 
+      [ngClass]="{'validated': getGrid().getValidatedTiles(i)}">
+      <img [src]="getImageById(x)" (click)="updateHistory(i)"/>
+    </div>
+  </ng-container>
+</div> 
+
+<h1 *ngIf="!isGameOver()" class="displayed-text">Motif à assembler:</h1>
+<div *ngIf="!isGameOver()" class="patternsWithNumbers">
+    <div class="patterns">
+        <ng-container *ngFor="let x of getGrid().getCurrentPattern()">
+            <div class='tile' [attr.data-x]="x">
+                <img [src]="getImageById(x)" draggable="false" />
+            </div>
+        </ng-container>
+    </div>  
+    <span class="numberOfPatterns">X {{getGrid().getNumberOfCurrentPattern()}}</span>
+</div>

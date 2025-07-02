@@ -1,0 +1,18 @@
+<main class="main">
+    <div class="history">
+        <io-tree-history style="height: 80%" [style.width]="'35%'" [cmdViewWidth]="200" [cmdViewHeight]="200" [rootRenderer]="rootRenderer()">
+        </io-tree-history>
+      </div>
+    <app-grid class="grid"></app-grid>
+    <div class="container">
+        <button class="round-button" (click)="openScoreboard()" aria-label="Open Scoreboard">
+            <img width="40px" src="ranking.svg" alt="Scoreboard" />
+        </button>
+        <p class="playerName">Joueur: {{ getGame().getPlayerName() }}</p>
+        <p class="score">Coups: {{ getGame().getScore() }}</p>
+
+        <p *ngIf="isGameOver()" class="game-over-message">FINI!</p>
+
+        <ng-container *ngIf="isGameOver() && openOverlay()"></ng-container>
+    </div>
+</main>

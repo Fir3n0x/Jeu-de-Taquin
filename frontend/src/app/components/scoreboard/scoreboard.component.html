@@ -1,0 +1,20 @@
+<div class="scoreboard-overlay">
+    <p class="top"><strong>Top 5 Scores</strong></p> 
+  
+    <div class="scoreboard-header">
+      <p>Rank</p>
+      <p>Name</p>
+      <p>Score</p>
+    </div>
+  
+    <div class="scoreboard-content">
+      <ng-container *ngFor="let entry of sortedScores; let i = index">
+        <div class="scoreboard-row">
+          <p>#{{ i + 1 }}</p> 
+          <p>{{ entry[0] }}</p> 
+          <p>{{ entry[1] }}</p> 
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  

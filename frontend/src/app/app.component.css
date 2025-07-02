@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: Bodo;
+    src: url("../../public/BodoAmat.ttf");
+}
+
+* {
+    font-family: Bodo;
+}
+
+main {
+    height: 100%;
+    display: block;
+    margin-top: 40px; /* Espace global autour du contenu */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em; /* Taille du titre */
+    font-weight: bold;
+    margin: 20px auto 60px; /* Espace au-dessus et en dessous */
+    color: #000;
+    text-align: center;
+    padding: 10px 20px; /* Espacement interne pour encadrer le texte */
+    border: 2px solid #000; /* Bordure noire autour du titre */
+    border-radius: 15px; /* Coins arrondis */
+    display: inline-block; /* Pour s'adapter à la largeur du texte */
+    background-color: #f9f9f9; /* Fond légèrement différent pour contraster */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour un effet esthétique */
+}

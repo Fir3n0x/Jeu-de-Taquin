@@ -1,0 +1,7 @@
+<div style="width: 500px;" >
+    <input type = "text" class = "playerName" placeholder="Player Name" [(ngModel)]="playerName"/>
+    <p class="texte"> Click on one of the following grid name to play with:</p>
+    <div *ngFor="let gridName of names() ; let i = index">
+        <button (click)="startGame(i)"> {{ gridName }} </button>
+    </div>
+</div>
