@@ -22,10 +22,12 @@ Le projet est découpé en deux dossiers racines :
 
 ## Architecture rapide
 
+```
 main/
 ├── backend/ # API Spring Boot 3.3.3, Java 21, Maven
 ├── frontend/ # Angular 18.1, Node 20+, TypeScript 5
 └── game-doc/ # Documentation
+```
 
 Dépendances clés (front‑end) : `@angular/material`, `rxjs`, `interacto` etc.
 Back‑end : `spring‑boot‑starter‑web`, `spring‑boot‑starter‑data‑jpa`, `H2 database`.
@@ -78,12 +80,14 @@ cd backend
 
 ## Structure du projet (front-end)
 
+```
 frontend/src/
 ├── app/
 │   ├── components/    # GridComponent, GameComponent, MenuComponent…
 │   ├── services/      # RestServiceService, GameServiceService…
 │   └── models/        # Grid, Game, Player…
 └── assets/            # Images des tuiles
+```
 
 Les déplacements se font via la commande TileClickCommand, historisée pour permettre Undo/Redo.
 
