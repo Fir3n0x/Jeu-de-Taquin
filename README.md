@@ -12,12 +12,12 @@ Le projet est découpé en deux dossiers racines :
 
 ## Captures d'écran
 
-<p float="left">
-  <img src="img/home.png" alt="home" width="30%" />
+<p align="center">
+  <img src="img/home.png" alt="home"/>
 </p>
 
-<p float="left">
-  <img src="img/in_game.png" alt="in_game" width="30%" />
+<p align="center">
+  <img src="img/in_game.png" alt="in_game"/>
 </p>
 
 ---
