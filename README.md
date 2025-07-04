@@ -10,6 +10,18 @@ Le projet est découpé en deux dossiers racines :
 
 ---
 
+## Captures d'écran
+
+<p float="left">
+  <img src="img/home.png" alt="home" width="30%" />
+</p>
+
+<p float="left">
+  <img src="img/in_game.png" alt="in_game" width="30%" />
+</p>
+
+---
+
 ## Fonctionnalités
 
 - Sélection d’une grille parmi celles exposées par l’API (`/api/game/grid/names`).
@@ -60,6 +72,24 @@ cd backend
 cd ../frontend
 npm install
 npm start                     # ouvre http://localhost:4200
+```
+
+Installer nvm
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# recharger shell :
+source ~/.bashrc   # ou ~/.zshrc selon shell
+
+nvm install --lts   # installe actuellement Node 22.x.x
+nvm use --lts
+node -v             # v22.x.x
+npm -v              # 10.x ou 11.x
+
+rm -rf node_modules package-lock.json   # ou pnpm-lock.yaml / yarn.lock - nettoyer dépendances précédentes
+npm install                             # recrée le tout avec la nouvelle version
+
+npm start
 ```
 
 ---
