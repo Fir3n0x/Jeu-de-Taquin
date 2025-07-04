@@ -10,29 +10,29 @@ Le projet est découpé en deux dossiers racines :
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-- Sélection d’une grille parmi celles exposées par l’API (`/api/game/grid/names`). :contentReference[oaicite:0]{index=0}
-- Glisser‑déposer ou clic pour déplacer les tuiles (commandes Undo/Redo gérées par *interacto*). :contentReference[oaicite:1]{index=1}
-- Compteur de coups et détection automatique de la victoire. :contentReference[oaicite:2]{index=2}
-- Tableau des scores persisté côté serveur (H2 embarqué). :contentReference[oaicite:3]{index=3}
+- Sélection d’une grille parmi celles exposées par l’API (`/api/game/grid/names`).
+- Glisser‑déposer ou clic pour déplacer les tuiles (commandes Undo/Redo gérées par *interacto*).
+- Compteur de coups et détection automatique de la victoire.
+- Tableau des scores persisté côté serveur (H2 embarqué).
 - Tests unitaires (Jasmine/Karma côté front et JUnit/JaCoCo côté back).
 
 ---
 
-## 🏗️ Architecture rapide
+## Architecture rapide
 
 main/
 ├── backend/ # API Spring Boot 3.3.3, Java 21, Maven
 ├── frontend/ # Angular 18.1, Node 20+, TypeScript 5
 └── game-doc/ # Documentation
 
-Dépendances clés (front‑end) : `@angular/material`, `rxjs`, `interacto` etc. :contentReference[oaicite:4]{index=4}
-Back‑end : `spring‑boot‑starter‑web`, `spring‑boot‑starter‑data‑jpa`, `H2 database`. :contentReference[oaicite:5]{index=5}
+Dépendances clés (front‑end) : `@angular/material`, `rxjs`, `interacto` etc.
+Back‑end : `spring‑boot‑starter‑web`, `spring‑boot‑starter‑data‑jpa`, `H2 database`.
 
 ---
 
-## ⚙️ Prérequis
+## Prérequis
 
 | Outil           | Version mini                   |
 | --------------- | ------------------------------ |
@@ -43,7 +43,7 @@ Back‑end : `spring‑boot‑starter‑web`, `spring‑boot‑starter‑data‑
 
 ---
 
-## 🚀 Installation & lancement
+## Installation & lancement
 
 ```bash
 # 1. Cloner le dépôt
