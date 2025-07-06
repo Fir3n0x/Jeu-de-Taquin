@@ -1,4 +1,4 @@
-# Jeu du Taquin – Angular & Spring Boot
+# Jeu de Taquin – Angular & Spring Boot
 
 Jeu du Taquin (aussi appelé *15‑puzzle*) développé en **Angular 18** pour le front‑end et **Spring Boot 3** pour l’API REST.  
 Le projet est découpé en deux dossiers racines :
