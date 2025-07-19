@@ -133,6 +133,12 @@ Les déplacements se font via la commande TileClickCommand, historisée pour per
 
 ---
 
+## License
+
+Ce projet est publié sous une licence MIT.
+
+---
+
 ## Author
 
 **Corentin Mahieu** – [@Fir3n0x](https://github.com/Fir3n0x)
